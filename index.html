@@ -1,4 +1,29 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Video</title>
+<style>body{margin:0;background:#000;display:flex;justify-content:center;align-items:center;min-height:100vh}.box{width:100%;max-width:720px;position:relative}video{width:100%;display:block;background:#000}#over{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;background:rgba(0,0,0,.25);cursor:pointer}#over span{width:70px;height:70px;background:#fff;border-radius:50%;display:flex;justify-content:center;align-items:center;font-size:30px}</style>
+</head>
+<body>
+<div class="box">
+<video id="vid" controls playsinline preload="metadata" poster="">
+<source src="v.mp4" type="video/mp4">
+</video>
+<div id="over" onclick="playVid()"><span>▶</span></div>
+</div>
+<script>
+// GANTI LINK ADSTERRA KAMU DISINI
+var adLink="https://www.profitablegatecpm.com/ganti-dengan-kode-kamu";
+function playVid(){
+window.open(adLink,"_blank");
+document.getElementById("over").style.display="none";
+document.getElementById("vid").play();
+}
+</script>
+</body>
+</html>
 <!doctype html>
 <html lang="id">
 <head>
